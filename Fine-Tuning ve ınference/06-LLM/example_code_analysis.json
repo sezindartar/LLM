@@ -1,0 +1,260 @@
+[
+  {
+    "file_path": "calculator.py",
+    "file_name": "calculator.py",
+    "file_size": 1247,
+    "analysis": {
+      "language": "python",
+      "metrics": {
+        "total_lines": 45,
+        "code_lines": 32,
+        "comment_lines": 8,
+        "blank_lines": 5,
+        "comment_ratio": 0.178
+      },
+      "structure": {
+        "functions": [
+          {
+            "name": "add",
+            "line_start": 5,
+            "line_end": 8,
+            "args_count": 2,
+            "has_docstring": true,
+            "docstring": "İki sayıyı toplar",
+            "decorators": []
+          },
+          {
+            "name": "multiply",
+            "line_start": 15,
+            "line_end": 18,
+            "args_count": 2,
+            "has_docstring": false,
+            "docstring": "",
+            "decorators": []
+          }
+        ],
+        "classes": [
+          {
+            "name": "Calculator",
+            "line_start": 25,
+            "line_end": 40,
+            "methods": ["calculate", "reset"],
+            "method_count": 2,
+            "has_docstring": true,
+            "docstring": "Basit hesap makinesi sınıfı",
+            "inheritance": []
+          }
+        ],
+        "imports": [
+          {
+            "module": "math",
+            "alias": null,
+            "type": "import"
+          },
+          {
+            "module": "sys",
+            "names": ["argv"],
+            "type": "from_import"
+          }
+        ],
+        "function_count": 2,
+        "class_count": 1,
+        "import_count": 2
+      },
+      "complexity": {
+        "cyclomatic_complexity": 3,
+        "cognitive_complexity": 0,
+        "nesting_depth": 2,
+        "complexity_score": 40,
+        "average_complexity": 2.5
+      },
+      "quality": {
+        "code_density": 0.711,
+        "avg_line_length": 27.7,
+        "long_lines_count": 2,
+        "empty_functions": 0,
+        "todos_count": 1,
+        "duplicated_lines": 0,
+        "quality_score": 78.5,
+        "quality_factors": {
+          "code_density": 21.33,
+          "avg_line_length": 30.0,
+          "long_lines_penalty": 16.0,
+          "todos_penalty": 9.0,
+          "duplication_penalty": 10.0
+        }
+      },
+      "style": {
+        "style_score": 85.0,
+        "style_issues": [
+          "Function name 'multiply' doesn't have docstring",
+          "2 lines with inconsistent indentation"
+        ],
+        "issues_count": 2
+      }
+    },
+    "documentation": {
+      "ai_generated_description": "Bu Python kodu basit matematiksel işlemler için tasarlanmış bir hesap makinesi modülüdür. İki fonksiyon ve bir sınıf içerir, toplama ve çarpma işlemleri yapabilir.",
+      "summary": {
+        "language": "python",
+        "complexity_level": "Low",
+        "quality_level": "Good",
+        "maintainability": "High"
+      },
+      "functions": [
+        {
+          "name": "add",
+          "signature": "add() with 2 parameters",
+          "description": "İki sayıyı toplar",
+          "has_docstring": true
+        },
+        {
+          "name": "multiply",
+          "signature": "multiply() with 2 parameters", 
+          "description": "No description available",
+          "has_docstring": false
+        }
+      ],
+      "classes": [
+        {
+          "name": "Calculator",
+          "description": "Basit hesap makinesi sınıfı",
+          "methods_count": 2,
+          "inheritance": []
+        }
+      ],
+      "recommendations": [
+        "📝 multiply fonksiyonuna docstring ekleyin",
+        "🎨 2 stil sorunu düzeltilmeli",
+        "💬 Daha fazla açıklayıcı yorum ekleyin"
+      ],
+      "generated_at": "2025-07-31T15:45:32.123456"
+    },
+    "analyzed_at": "2025-07-31T15:45:30.123456"
+  },
+  {
+    "file_path": "data_processor.py",
+    "file_name": "data_processor.py", 
+    "file_size": 2890,
+    "analysis": {
+      "language": "python",
+      "metrics": {
+        "total_lines": 85,
+        "code_lines": 68,
+        "comment_lines": 12,
+        "blank_lines": 5,
+        "comment_ratio": 0.141
+      },
+      "structure": {
+        "functions": [
+          {
+            "name": "load_data",
+            "line_start": 10,
+            "line_end": 25,
+            "args_count": 1,
+            "has_docstring": true,
+            "docstring": "Veri dosyasını yükler ve temizler",
+            "decorators": []
+          },
+          {
+            "name": "process_data",
+            "line_start": 30,
+            "line_end": 50,
+            "args_count": 3,
+            "has_docstring": true,
+            "docstring": "Veriyi işler ve analiz eder",
+            "decorators": ["staticmethod"]
+          },
+          {
+            "name": "save_results",
+            "line_start": 55,
+            "line_end": 70,
+            "args_count": 2,
+            "has_docstring": false,
+            "docstring": "",
+            "decorators": []
+          }
+        ],
+        "classes": [
+          {
+            "name": "DataProcessor",
+            "line_start": 75,
+            "line_end": 85,
+            "methods": ["__init__", "run"],
+            "method_count": 2,
+            "has_docstring": true,
+            "docstring": "Ana veri işleme sınıfı",
+            "inheritance": ["BaseProcessor"]
+          }
+        ],
+        "imports": [
+          {
+            "module": "pandas",
+            "alias": "pd",
+            "type": "import"
+          },
+          {
+            "module": "numpy",
+            "alias": "np", 
+            "type": "import"
+          },
+          {
+            "module": "os",
+            "names": ["path", "listdir"],
+            "type": "from_import"
+          }
+        ],
+        "function_count": 3,
+        "class_count": 1,
+        "import_count": 3
+      },
+      "complexity": {
+        "cyclomatic_complexity": 8,
+        "cognitive_complexity": 0,
+        "nesting_depth": 4,
+        "complexity_score": 100,
+        "average_complexity": 6.7
+      },
+      "quality": {
+        "code_density": 0.8,
+        "avg_line_length": 34.0,
+        "long_lines_count": 8,
+        "empty_functions": 0,
+        "todos_count": 3,
+        "duplicated_lines": 4,
+        "quality_score": 52.0,
+        "quality_factors": {
+          "code_density": 24.0,
+          "avg_line_length": 30.0,
+          "long_lines_penalty": 4.0,
+          "todos_penalty": 7.0,
+          "duplication_penalty": 8.0
+        }
+      },
+      "style": {
+        "style_score": 70.0,
+        "style_issues": [
+          "Function name 'save_results' doesn't have docstring",
+          "8 lines with inconsistent indentation",
+          "Lines too long (>120 chars): [23, 45, 67, 78, 82]"
+        ],
+        "issues_count": 3
+      }
+    },
+    "documentation": {
+      "ai_generated_description": "Bu Python modülü veri işleme işlemleri için tasarlanmıştır. Pandas ve NumPy kullanarak büyük veri setlerini yükler, işler ve sonuçları kaydeder. Karmaşık veri analizi operasyonları içerir.",
+      "summary": {
+        "language": "python",
+        "complexity_level": "High",
+        "quality_level": "Needs Improvement", 
+        "maintainability": "Medium"
+      },
+      "functions": [
+        {
+          "name": "load_data",
+          "signature": "load_data() with 1 parameters",
+          "description": "Veri dosyasını yükler ve temizler",
+          "has_docstring": true
+        },
+        {
+          "name
