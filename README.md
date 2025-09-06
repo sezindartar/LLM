@@ -1,65 +1,124 @@
-🤖 LLM Portfolio - AI Projects
+# 🤖 LLM Portfolio - AI Projects
 
-📋 Proje Özeti
-Bu repository,  büyük dil modelleri (LLM) alanındaki çalışmalarımı içeren kapsamlı bir portfolyo projesidir. Proje, temel ML kavramlarından ileri seviye NLP uygulamalarına kadar geniş bir yelpazede örnekler sunmaktadır.
+A comprehensive portfolio showcasing my work in Large Language Models (LLM) and Natural Language Processing. This repository contains examples ranging from fundamental ML concepts to advanced NLP applications.
 
-🎯 Ana Bileşenler
-📚 Temel LLM Kavramları: Transformer mimarisi, tokenization, temel sentiment analizi ve LLM terminolojisi.
+## 🎯 Project Overview
 
-🧠 LangChain ve Chain-of-Thought: LangChain framework'ü ile karmaşık problem çözme yeteneklerinin geliştirilmesi (OpenAI API entegrasyonu).
+This portfolio demonstrates practical applications of modern NLP techniques and LLM technologies through hands-on projects. Each component is designed to showcase different aspects of AI development, from basic concepts to production-ready systems.
 
-🎨 Çok Dilli Hikaye Üretimi: Farklı dillerde (TR, EN, DE, FR, ES) hikaye oluşturan, duygu analizi ve hikaye kalitesi değerlendirmesi yapan interaktif bir sistem.
+## 📚 Core Components
 
-📊 Gradio ile Model Deployment: BERT tabanlı, Türkçe müşteri hizmetleri için geliştirilmiş ve Gradio ile web arayüzüne sahip bir chatbot uygulaması.
+### 🧠 Foundation LLM Concepts
+- **Transformer Architecture**: Implementation and explanation of core transformer components
+- **Tokenization**: Text preprocessing and tokenization techniques
+- **Sentiment Analysis**: Basic emotion detection using pre-trained models
+- **LLM Terminology**: Comprehensive guide to essential concepts
 
-🔍 RAG (Retrieval Augmented Generation) Sistemi: FAISS vectorstore kullanarak PDF belgelerinden anlık bilgi çeken ve doğal dil ile soru-cevap yapabilen bir sistem.
+### 🔗 LangChain & Chain-of-Thought
+- **Framework Integration**: Advanced problem-solving using LangChain
+- **OpenAI API**: Seamless integration with GPT models
+- **Reasoning Chains**: Implementation of complex multi-step reasoning
 
-🌐 AI Code Assistant (Docker ile): FastAPI ve Streamlit kullanarak oluşturulan, kod analizi ve güvenlik taraması yapabilen, Docker ile kolayca deploy edilebilen bir asistan.
+### 🎨 Multilingual Story Generation
+- **Language Support**: Story generation in Turkish, English, German, French, and Spanish
+- **Quality Assessment**: Automated story quality evaluation
+- **Sentiment Analysis**: Emotion detection in generated content
+- **Interactive Interface**: User-friendly story creation system
 
-🛠️ Teknoloji Stack
-Çekirdek Kütüphaneler: transformers, torch, langchain, openai, gradio, streamlit, fastapi.
+### 📊 Model Deployment with Gradio
+- **BERT Integration**: Custom BERT-based chatbot for Turkish customer service
+- **Web Interface**: Professional Gradio-powered web application
+- **Real-time Processing**: Instant response generation
 
-ML/AI Bileşenleri: GPT-4, BERT, RoBERTa modelleri; FAISS vector store; OpenAI Embeddings.
+### 🔍 RAG (Retrieval Augmented Generation) System
+- **FAISS Vector Store**: High-performance document indexing
+- **PDF Processing**: Automatic document ingestion and processing
+- **Natural Language Queries**: Conversational question-answering interface
+- **Real-time Retrieval**: Instant information extraction from documents
 
-Diller: Python, JavaScript.
+### 🌐 AI Code Assistant (Dockerized)
+- **FastAPI Backend**: High-performance API server
+- **Streamlit Frontend**: Interactive web interface
+- **Code Analysis**: Automated code review and suggestions
+- **Security Scanning**: Built-in security vulnerability detection
+- **Docker Ready**: One-command deployment
 
-🚀 Kurulum ve Çalıştırma
-Gereksinimler: Projeyi çalıştırmak için gerekli paketleri requirements.txt dosyasından kurun.
+## 🛠️ Technology Stack
 
-Bash
+### Core Libraries
+```
+transformers, torch, langchain, openai, gradio, streamlit, fastapi
+```
 
+### ML/AI Components
+- **Models**: GPT-4, BERT, RoBERTa
+- **Vector Store**: FAISS
+- **Embeddings**: OpenAI Embeddings
+- **Languages**: Python, JavaScript
+
+## 🚀 Quick Start
+
+### Prerequisites
+```bash
 pip install -r requirements.txt
-Ortam Değişkenleri: .env dosyası oluşturarak OpenAI API anahtarınızı tanımlayın.
+```
 
-Bash
-
+### Environment Setup
+Create a `.env` file in the root directory:
+```env
 OPENAI_API_KEY=your_api_key_here
-Docker ile Çalıştırma: Tüm uygulamaları Docker Compose ile tek komutla çalıştırın.
+```
 
-Bash
-
+### Docker Deployment (Recommended)
+Run all applications with a single command:
+```bash
 docker-compose up -d
-Bireysel Projeler: İlgili Python dosyalarını doğrudan çalıştırarak projeleri deneyimleyin.
+```
 
-✨ Özellikler
-Hikaye Üretim Sistemi: Çok dilli destek, farklı türlerde hikaye üretimi, duygu ve kalite analizi.
+### Individual Module Usage
+Navigate to specific modules and explore:
+```bash
+cd 01-LLM  # Start with fundamentals
+python examples/tokenization_demo.py
 
-Chatbot Sistemi: Intent classification, Türkçe dil desteği ve kullanıcı dostu Gradio arayüzü.
+cd ../04-LLM  # Try vector search
+python semantic_search_example.py
 
-RAG Sistemi: Hızlı belge işleme ve vector araması, PDF'lerden bilgi çekerek doğal dil sorgularına cevap verme.
+cd ../07-LLM  # Deploy applications
+docker-compose up -d
+```
 
-📈 Öğrenim Hedefleri
-Bu proje, aşağıdaki konularda pratik deneyim kazanmak isteyenler için idealdir:
+## ✨ Key Features
 
-Transformer mimarisi ve LangChain framework'ü
+- **🌍 Multilingual Support**: Generate and analyze content in 5+ languages
+- **🤖 Intelligent Chatbot**: Turkish-optimized customer service bot
+- **📖 Document Q&A**: Query PDF documents using natural language
+- **🔒 Code Security**: Automated security analysis for code projects
+- **🚀 Easy Deployment**: Docker-containerized for seamless deployment
 
-RAG sistemlerinin tasarımı
+## 📁 Project Structure
 
-Çok dilli NLP uygulamaları
+```
+├── 01_llm_fundamentals/     # Basic LLM concepts and implementations
+├── 02_langchain_projects/   # LangChain framework applications
+├── 03_story_generation/     # Multilingual story creation system
+├── 04_gradio_deployment/    # Web-based chatbot deployment
+├── 05_rag_system/          # Retrieval Augmented Generation
+├── 06_ai_code_assistant/   # Dockerized code analysis tool
+├── docker-compose.yml      # Multi-container deployment
+├── requirements.txt        # Python dependencies
+└── README.md              # This file
+```
 
-Model deployment ve Docker ile containerization
+## 📈 Learning Objectives
 
-📄 Lisans
-Bu proje MIT lisansı altında paylaşılmıştır.
+This portfolio is perfect for those looking to gain hands-on experience in:
 
-⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+- **Transformer Architecture**: Deep understanding of attention mechanisms
+- **LangChain Framework**: Building complex AI workflows
+- **RAG Systems**: Implementing retrieval-augmented generation
+- **Multilingual NLP**: Working with multiple languages
+- **Production Deployment**: Docker containerization and web deployment
+- **API Integration**: OpenAI and other ML service integrations
+
+
